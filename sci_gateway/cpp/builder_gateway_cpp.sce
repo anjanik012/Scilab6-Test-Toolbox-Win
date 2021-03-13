@@ -36,8 +36,8 @@ Version = opt(2);
 
 if getos()=="Windows" then
     third_dir =  path_builder+filesep()+'..'+filesep()+'..'+filesep()+'test'; 
-    lib_base_dir = third_dir1 + filesep();
-    inc_base_dir = third_dir1 + filesep();
+    lib_base_dir = third_dir + filesep();
+    inc_base_dir = third_dir + filesep();
     C_Flags=['-D__USE_DEPRECATED_STACK_FUNCTIONS__  -I -w '+path_builder+' '+ '-I '+inc_base_dir+' ']   
     Linker_Flag  = "";
 		libs  = [lib_base_dir+"libtrans"];

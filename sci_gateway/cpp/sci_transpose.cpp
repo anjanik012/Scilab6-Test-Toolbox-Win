@@ -19,17 +19,13 @@ int sci_transpose(
 {
     if (nin != 1)
     {
-        Scierror(77, _("%s: Wrong number of input argument(s): %d expected.\n"), fname, 2);
+        Scierror(77, _("%s: Wrong number of input argument(s): %d expected.\n"), fname, 1);
         return 1;
     }
 
     if (nout != 1)
     {
         Scierror(77, _("%s: Wrong number of output argument(s): %d expected.\n"), fname, 1);
-        return 1;
-    }
-    if (scilab_isMatrix2d(env, in[1]) != 0) {
-         Scierror(999, _("%s: Wrong type for input argument #%d: A matrix expected.\n"), fname, 1);
         return 1;
     }
     int m, n;
