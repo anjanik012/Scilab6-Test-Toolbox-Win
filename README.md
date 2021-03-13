@@ -25,3 +25,16 @@ cd .\test
 ```
 
 Alternatively, these steps can be easily done by GUI as well.
+
+### Build the toolbox and load on Scilab
+
+Open scilab console and navigate to `tbx_root\sci_gateway\cpp`
+
+Then do the following steps:- 
+
+```
+exec builder_gateway_cpp.sce
+exec loader.sce
+```
+
+Use the toolbox.
