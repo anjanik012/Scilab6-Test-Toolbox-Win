@@ -28,12 +28,12 @@ Alternatively, these steps can be easily done by GUI as well.
 
 ### Build the toolbox and load on Scilab
 
-Open scilab console and navigate to `tbx_root\sci_gateway\cpp`
+Open scilab console and navigate to `tbx_root`
 
 Then do the following steps:- 
 
 ```
-exec builder_gateway_cpp.sce
+exec builder.sce
 exec loader.sce
 ```
 
