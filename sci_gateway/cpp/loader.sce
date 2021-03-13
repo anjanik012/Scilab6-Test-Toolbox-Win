@@ -15,8 +15,8 @@ if bOK then
   ulink(ilib);
 end
 //
-link('D:\Scilab_work\Scilab6-Test-Toolbox-master\sci_gateway\cpp\\..\..\thirdparty\windows\lib\libmul' + getdynlibext());
-list_functions = [ 'multiply';
+link('D:\Scilab_work\Scilab6-Test-Toolbox-master\sci_gateway\cpp\\..\..\test\libtrans' + getdynlibext());
+list_functions = [ 'transpose';
 ];
 addinter(test_toolbox_path + filesep() + 'test_toolbox' + getdynlibext(), 'test_toolbox', list_functions);
 // remove temp. variables on stack

@@ -25,7 +25,7 @@ CC_COMMON = -DWIN32 -DSTRICT -DFORDLL -D_MSC_VER $(INCLUDES)
 CC_OPTIONS = -c $(CC_COMMON) -m64
 FC_OPTIONS = -c
 CC_LDFLAGS =
-CFLAGS = $(CC_OPTIONS) -D__SCILAB_TOOLBOX__ -D__USE_DEPRECATED_STACK_FUNCTIONS__  -I -w D:\Scilab_work\Scilab6-Test-Toolbox-master\sci_gateway\cpp\ -I D:\Scilab_work\Scilab6-Test-Toolbox-master\sci_gateway\cpp\\..\..\thirdparty\windows\include  -DNDEBUG 
+CFLAGS = $(CC_OPTIONS) -D__SCILAB_TOOLBOX__ -D__USE_DEPRECATED_STACK_FUNCTIONS__  -I -w D:\Scilab_work\Scilab6-Test-Toolbox-master\sci_gateway\cpp\ -I D:\Scilab_work\Scilab6-Test-Toolbox-master\sci_gateway\cpp\\..\..\test\  -DNDEBUG 
 FFLAGS = $(FC_OPTIONS)  
 #=============================================================
 LINKER_FLAGS = --shared $(OBJS) -std=c++17 -L$(GCCLIBDIR) -L$(SCIMINGWLIBDIR) -lgfortran -lquadmath $(SCILAB_LIBS) $(XCOS_LIBS)
@@ -35,13 +35,13 @@ EXTRA_LDFLAGS =
 LIBRARY = test_toolbox
 #=============================================================
 # list of files
-FILES_SRC = sci_multiply.cpp test_toolbox.cpp
+FILES_SRC = sci_transpose.cpp test_toolbox.cpp
 #=============================================================
 # list of objects file
-OBJS = sci_multiply.o test_toolbox.o
+OBJS = sci_transpose.o test_toolbox.o
 #=============================================================
 # added libraries
-OTHERLIBS = D:\Scilab_work\Scilab6-Test-Toolbox-master\sci_gateway\cpp\\..\..\thirdparty\windows\lib\libmul.a
+OTHERLIBS = D:\Scilab_work\Scilab6-Test-Toolbox-master\sci_gateway\cpp\\..\..\test\libtrans.a
 #=============================================================
 # include options
 INCLUDES = -I"$(SCIDIR)/libs/MALLOC/includes" \
