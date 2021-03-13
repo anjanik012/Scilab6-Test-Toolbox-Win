@@ -5,3 +5,23 @@ This toolbox overall demonstrates
 2. How to add a function defined in Scilab in Scilab
 3. How to write help for the added functions
 4. How to create a toolbox out of the above functions.
+
+## Build tested on Windows 10 LTSC
+
+Compiler:- `gcc 8.3.0`
+Shell:- `Powershell`
+
+### Build libtrans.dll
+
+```
+cd .\test
+.\build.ps1
+```
+
+### Run test.exe
+
+```
+.\test.exe
+```
+
+Alternatively, these steps can be easily done by GUI as well.
