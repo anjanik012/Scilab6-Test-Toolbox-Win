@@ -11,7 +11,7 @@ This toolbox overall demonstrates
 Compiler:- `gcc 8.3.0`
 Shell:- `Powershell`
 
-### Build libtrans.dll
+### Build libtrans.dll & libtrans.a
 
 ```
 cd .\test
