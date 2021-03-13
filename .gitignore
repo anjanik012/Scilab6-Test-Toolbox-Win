@@ -1,0 +1,12 @@
+# All back up files
+*.*~
+*.bin
+*.so
+*.dll
+*.lib
+*.exe
+*.la
+*.out
+*.o
+thirdparty/
+.vscode/

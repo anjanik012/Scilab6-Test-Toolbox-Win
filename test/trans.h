@@ -1,0 +1,1 @@
+double **trans(double **, int, int);
